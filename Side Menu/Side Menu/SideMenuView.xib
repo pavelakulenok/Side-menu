@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Side_menu" customModuleProvider="target">
+            <connections>
+                <outlet property="sideMenuBlueButton" destination="M6Q-nV-wmv" id="SAz-ZH-p4X"/>
+                <outlet property="sideMenuGrayButton" destination="MEw-uv-Ebs" id="dDo-69-pd2"/>
+                <outlet property="sideMenuRedButton" destination="rFF-ig-UGN" id="gd1-N1-0Oi"/>
+                <outlet property="sideMenuWhiteButton" destination="Xym-Mu-Qyx" id="8Ob-HW-bFt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background color" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8J-p2-4pJ">
+                    <rect key="frame" x="0.0" y="70" width="120" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ceB-gb-Lpt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6Q-nV-wmv">
+                    <rect key="frame" x="35" y="230" width="50" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Gqi-sL-G3l"/>
+                        <constraint firstAttribute="width" constant="50" id="LSm-bW-rQo"/>
+                    </constraints>
+                    <state key="normal" title="Blue">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onSideMenuBlueButton:" destination="-1" eventType="touchUpInside" id="8AE-MW-EFi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEw-uv-Ebs">
+                    <rect key="frame" x="35" y="310" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6M7-On-sjI"/>
+                        <constraint firstAttribute="width" constant="50" id="N3g-jR-Ndc"/>
+                    </constraints>
+                    <state key="normal" title="Gray">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onSideMenuGrayButton:" destination="-1" eventType="touchUpInside" id="Exz-3i-XML"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xym-Mu-Qyx">
+                    <rect key="frame" x="35" y="390" width="50" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Dbm-EO-h9l"/>
+                        <constraint firstAttribute="height" constant="50" id="N1s-Cm-qsI"/>
+                    </constraints>
+                    <state key="normal" title="White">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onSideMenuWhiteButton:" destination="-1" eventType="touchUpInside" id="Vrf-1G-2gm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFF-ig-UGN">
+                    <rect key="frame" x="35" y="150" width="50" height="50"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Hgg-Hl-6oc"/>
+                        <constraint firstAttribute="height" constant="50" id="Igr-Pf-fKd"/>
+                    </constraints>
+                    <state key="normal" title="Red">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onSideMenuRedButton:" destination="-1" eventType="touchUpInside" id="K9J-cs-Qfk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="v8J-p2-4pJ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="3Dn-Ef-MRt"/>
+                <constraint firstItem="MEw-uv-Ebs" firstAttribute="top" secondItem="M6Q-nV-wmv" secondAttribute="bottom" constant="30" id="6cC-cb-5Bm"/>
+                <constraint firstItem="MEw-uv-Ebs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HlA-cj-j06"/>
+                <constraint firstItem="Xym-Mu-Qyx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Jw0-3I-KgA"/>
+                <constraint firstItem="Xym-Mu-Qyx" firstAttribute="top" secondItem="MEw-uv-Ebs" secondAttribute="bottom" constant="30" id="bsA-Rb-Mcc"/>
+                <constraint firstItem="rFF-ig-UGN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dhA-l3-Nxb"/>
+                <constraint firstItem="v8J-p2-4pJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="esZ-0C-OR5"/>
+                <constraint firstItem="v8J-p2-4pJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="h9w-EO-wzG"/>
+                <constraint firstItem="M6Q-nV-wmv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lyD-Ny-26J"/>
+                <constraint firstItem="M6Q-nV-wmv" firstAttribute="top" secondItem="rFF-ig-UGN" secondAttribute="bottom" constant="30" id="mAz-9A-bhM"/>
+                <constraint firstItem="rFF-ig-UGN" firstAttribute="top" secondItem="v8J-p2-4pJ" secondAttribute="bottom" constant="30" id="y1D-Jz-NeW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-265" y="8"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

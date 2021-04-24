@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-hamburger-button-computer-icons-menu-square-root-5b43f17fc11277.8237917415311793917908.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-hamburger-button-computer-icons-menu-square-root-5b43f17fc11277.8237917415311793917908-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-hamburger-button-computer-icons-menu-square-root-5b43f17fc11277.8237917415311793917908-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
