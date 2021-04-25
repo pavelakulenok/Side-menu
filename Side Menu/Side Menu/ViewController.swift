@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var sideMenuBlueButton: UIButton!
     @IBOutlet weak var sideMenuGrayButton: UIButton!
     @IBOutlet weak var sideMenuWhiteButton: UIButton!
+    @IBOutlet weak var oneButtonAlertButton: UIButton!
+    @IBOutlet weak var twoButtonsAlertButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,8 @@ class ViewController: UIViewController {
         sideMenuBlueButton.layer.cornerRadius = 25
         sideMenuGrayButton.layer.cornerRadius = 25
         sideMenuWhiteButton.layer.cornerRadius = 25
+        oneButtonAlertButton.layer.cornerRadius = 20
+        twoButtonsAlertButton.layer.cornerRadius = 20
         tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(onMenuButton))
     }
 
@@ -55,6 +59,14 @@ class ViewController: UIViewController {
                 self.contentView.removeGestureRecognizer(self.tapRecognizer)
             }
         }
+    }
+
+    @IBAction private func onOneButtonAlertButton(_ sender: Any) {
+        showAlertWithOneButton(title: "Hello", message: "I'm one button alert", actionTitle: "Goodbye", actionStyle: .default, handler: nil)
+    }
+
+    @IBAction private func onTwoButtonsAlertButton(_ sender: Any) {
+        showAlertWithTwoButtons(title: "Hello", message: "I'm two buttons alert", firstActionTitle: "Ok", firstActionStyle: .default, firstHandler: nil, secondActionTitle: "Close", secondActionStyle: .destructive, secondHandler: nil)
     }
 
     @IBAction private func onSideMenuRedButton(_ sender: Any) {

@@ -40,8 +40,45 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1w-PU-qew">
                                 <rect key="frame" x="0.0" y="70" width="414" height="826"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5i-0j-hpK">
+                                        <rect key="frame" x="224" y="388" width="160" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3od-BM-Ac0"/>
+                                            <constraint firstAttribute="width" constant="160" id="Tkw-Lr-hvg"/>
+                                        </constraints>
+                                        <state key="normal" title="Alert with two buttons">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onTwoButtonsAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7VF-Na-E0y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B20-5H-Ysw">
+                                        <rect key="frame" x="30" y="388" width="160" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="qLj-62-lGg"/>
+                                            <constraint firstAttribute="height" constant="50" id="sh9-or-rXM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="Alert with one button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onOneButtonAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="idV-Vh-UmI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="B20-5H-Ysw" firstAttribute="centerY" secondItem="U1w-PU-qew" secondAttribute="centerY" id="4Zi-er-kxz"/>
+                                    <constraint firstAttribute="trailing" secondItem="g5i-0j-hpK" secondAttribute="trailing" constant="30" id="Gxw-YW-y9m"/>
+                                    <constraint firstItem="g5i-0j-hpK" firstAttribute="centerY" secondItem="U1w-PU-qew" secondAttribute="centerY" id="JtJ-Eg-khw"/>
+                                    <constraint firstItem="B20-5H-Ysw" firstAttribute="leading" secondItem="U1w-PU-qew" secondAttribute="leading" constant="30" id="qWH-6U-6dn"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -59,17 +96,22 @@
                     <connections>
                         <outlet property="contentView" destination="U1w-PU-qew" id="F9e-cJ-Nfo"/>
                         <outlet property="menuButton" destination="SuU-vp-3Ty" id="9bJ-lk-N6n"/>
+                        <outlet property="oneButtonAlertButton" destination="B20-5H-Ysw" id="1VH-T1-jhp"/>
+                        <outlet property="twoButtonsAlertButton" destination="g5i-0j-hpK" id="xid-s7-0Ii"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-839" y="29"/>
+            <point key="canvasLocation" x="-839.13043478260875" y="28.794642857142854"/>
         </scene>
     </scenes>
     <resources>
         <image name="burgerButton" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

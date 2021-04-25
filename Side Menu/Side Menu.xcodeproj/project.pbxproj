@@ -14,6 +14,7 @@
 		D4A925EE2634B4B3008E5960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A925ED2634B4B3008E5960 /* Assets.xcassets */; };
 		D4A925F12634B4B3008E5960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A925EF2634B4B3008E5960 /* LaunchScreen.storyboard */; };
 		D4A925FA2634B6F5008E5960 /* SideMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A925F92634B6F5008E5960 /* SideMenuView.xib */; };
+		D4FD9B612635778A00333402 /* UIViewController+UIAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FD9B602635778A00333402 /* UIViewController+UIAlertVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D4A925F02634B4B3008E5960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4A925F22634B4B3008E5960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4A925F92634B6F5008E5960 /* SideMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuView.xib; sourceTree = "<group>"; };
+		D4FD9B602635778A00333402 /* UIViewController+UIAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIAlertVC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				D4A925E42634B4B3008E5960 /* AppDelegate.swift */,
 				D4A925E62634B4B3008E5960 /* SceneDelegate.swift */,
 				D4A925E82634B4B3008E5960 /* ViewController.swift */,
+				D4FD9B602635778A00333402 /* UIViewController+UIAlertVC.swift */,
 				D4A925EA2634B4B3008E5960 /* Main.storyboard */,
 				D4A925F92634B6F5008E5960 /* SideMenuView.xib */,
 				D4A925ED2634B4B3008E5960 /* Assets.xcassets */,
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4FD9B612635778A00333402 /* UIViewController+UIAlertVC.swift in Sources */,
 				D4A925E92634B4B3008E5960 /* ViewController.swift in Sources */,
 				D4A925E52634B4B3008E5960 /* AppDelegate.swift in Sources */,
 				D4A925E72634B4B3008E5960 /* SceneDelegate.swift in Sources */,
